@@ -1,0 +1,48 @@
+/* 变量和对象属性 - 使用暗化的白色 */
+.mtk1 {
+  color: #d0d0cc !important; /* 将白色改暗一些 */
+}
+
+/* 常量发光效果 - 使用#bf9eee颜色 */
+.mtk3 {
+  color: #cca7ff !important; /* 提亮颜色 */
+  text-shadow: 0 0 2px #100c0f, 0 0 10px #bf9eee75, 0 0 5px #bf9eee75, 0 0 25px #bf9eee75 !important;
+  font-weight: normal;
+}
+
+/* 函数名发光效果 - 使用#62e884颜色 */
+.mtk5 {
+  color: #62e884 !important;
+  text-shadow: 0 0 2px #100c0f, 0 0 10px #62e88475, 0 0 5px #62e88475, 0 0 25px #62e88475 !important;
+  font-weight: normal;
+}
+
+/* 函数参数发光效果 - 使用#FFB86C颜色 */
+.mtk7 {
+  color: #FFB86C !important;
+  text-shadow: 0 0 2px #100c0f, 0 0 10px #FFB86C75, 0 0 5px #FFB86C75, 0 0 25px #FFB86C75 !important;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* 字符串发光效果 - 使用暗化的黄色 */
+.mtk8 {
+  color: #d3d994 !important;
+}
+
+/* 类名发光效果 - 使用#97e1f1颜色 */
+.mtk9 {
+  color: #4ee7ff !important; /* 调整为更蓝的颜色 */
+  text-shadow: 0 0 2px #100c0f, 0 0 10px #74d8ff60, 0 0 5px #74d8ff60, 0 0 25px #74d8ff50 !important;
+  font-weight: normal;
+}
+
+/* 关键字发光效果 - 使用#f286c4颜色，增强发光效果 */
+.mtk10 {
+  color: #ff8dd4 !important; /* 提亮颜色 */
+  text-shadow: 0 0 2px #100c0f, 0 0 8px #f286c470, 0 0 12px #f286c470, 0 0 25px #f286c460, 0 0 30px #f286c450 !important;
+  font-weight: normal; /* 恢复原始粗细 */
+}
+
+
+
