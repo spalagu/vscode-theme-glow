@@ -1,57 +1,68 @@
+/* Dracula主题发光效果 CSS - 为各种语法元素添加霓虹发光效果 */
+
 /* 变量和对象属性 - 使用暗化的白色 */
 .mtk1 {
-  color: #d0d0cc !important; /* 将白色改暗一些 */
-}
-
-/* 未使用的变量样式 - 较暗但有特殊效果 */
-.squiggly-inline-unnecessary {
-  color: #c8c8c8 !important; /* 中灰色，比正常变量暗但比原来的亮 */
-  /* 使用单一text-decoration声明，简写形式 */
-  text-decoration: line-through 2px double rgba(80, 250, 123, 0.5) !important; /* 半透明绿色双线删除线 */
-  opacity: 0.9; /* 稍微透明 */
-  font-style: italic; /* 斜体 */
-}
-
-/* 常量发光效果 - 使用#bf9eee颜色 */
-.mtk3 {
-  color: #cca7ff !important; /* 提亮颜色 */
-  text-shadow: 0 0 2px #100c0f, 0 0 10px #bf9eee75, 0 0 5px #bf9eee75, 0 0 25px #bf9eee75 !important;
-  font-weight: normal;
-}
-
-/* 函数名发光效果 - 使用#62e884颜色 */
-.mtk5 {
-  color: #62e884 !important;
-  text-shadow: 0 0 2px #100c0f, 0 0 10px #62e88475, 0 0 5px #62e88475, 0 0 25px #62e88475 !important;
-  font-weight: normal;
-}
-
-/* 函数参数发光效果 - 使用#FFB86C颜色 */
-.mtk7 {
-  color: #FFB86C !important;
-  text-shadow: 0 0 2px #100c0f, 0 0 10px #FFB86C75, 0 0 5px #FFB86C75, 0 0 25px #FFB86C75 !important;
-  font-weight: normal;
-  font-style: italic;
-}
-
-/* 字符串发光效果 - 使用暗化的黄色 */
-.mtk8 {
-  color: #d3d994 !important;
-}
-
-/* 类名发光效果 - 使用#97e1f1颜色 */
-.mtk9 {
-  color: #4ee7ff !important; /* 调整为更蓝的颜色 */
-  text-shadow: 0 0 2px #100c0f, 0 0 10px #74d8ff60, 0 0 5px #74d8ff60, 0 0 25px #74d8ff50 !important;
-  font-weight: normal;
-}
-
-/* 关键字发光效果 - 使用#f286c4颜色，增强发光效果 */
-.mtk10 {
-  color: #ff8dd4 !important; /* 提亮颜色 */
-  text-shadow: 0 0 2px #100c0f, 0 0 8px #f286c470, 0 0 12px #f286c470, 0 0 25px #f286c460, 0 0 30px #f286c450 !important;
-  font-weight: normal; /* 恢复原始粗细 */
-}
-
-
-
+    color: #d0d0cc !important; /* 将白色改暗一些 */
+  }
+  
+  /* 未使用的变量样式 - 较暗但有特殊效果 */
+  .squiggly-inline-unnecessary {
+    color: #c8c8c8 !important; /* 中灰色，比正常变量暗但比原来的亮 */
+    /* 使用单一text-decoration声明，简写形式 */
+    text-decoration: line-through 2px double rgba(80, 250, 123, 0.5) !important; /* 半透明绿色双线删除线 */
+    opacity: 0.9; /* 稍微透明 */
+    font-style: italic; /* 斜体 */
+  }
+  
+  /* 注释样式 - 使用加框效果 */
+  .mtk4 {
+    color: #000000 !important; /* 偏向编辑器背景色 */
+    font-weight: bold !important;
+    background-color: rgba(180, 180, 180, 0.45) !important; /* 淡灰色背景 */
+    border: 1px solid rgba(140, 140, 140, 0.55) !important; /* 深灰色边框，比背景深 */
+    border-radius: 3px !important; /* 圆角 */
+    padding: 0 4px !important; /* 左右内边距 */
+    margin: 0 2px !important; /* 左右外边距 */
+    box-shadow: 0 0 4px rgba(140, 140, 150, 0.1) inset !important; /* 内部阴影增强立体感 */
+  }
+  
+  /* 常量发光效果 - 使用#bf9eee颜色 */
+  .mtk3 {
+    color: #cca7ff !important; /* 提亮颜色 */
+    text-shadow: 0 0 2px #100c0f, 0 0 10px #bf9eee75, 0 0 5px #bf9eee75, 0 0 25px #bf9eee75 !important;
+    font-weight: normal;
+  }
+  
+  /* 函数名发光效果 - 使用#62e884颜色 */
+  .mtk5 {
+    color: #62e884 !important;
+    text-shadow: 0 0 2px #100c0f, 0 0 10px #62e88475, 0 0 5px #62e88475, 0 0 25px #62e88475 !important;
+    font-weight: normal;
+  }
+  
+  /* 函数参数发光效果 - 使用#FFB86C颜色 */
+  .mtk7 {
+    color: #FFB86C !important;
+    text-shadow: 0 0 2px #100c0f, 0 0 10px #FFB86C75, 0 0 5px #FFB86C75, 0 0 25px #FFB86C75 !important;
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* 字符串发光效果 - 使用暗化的黄色 */
+  .mtk8 {
+    color: #d3d994 !important;
+  }
+  
+  /* 类名发光效果 - 使用#97e1f1颜色 */
+  .mtk9 {
+    color: #4ee7ff !important; /* 调整为更蓝的颜色 */
+    text-shadow: 0 0 2px #100c0f, 0 0 10px #74d8ff60, 0 0 5px #74d8ff60, 0 0 25px #74d8ff50 !important;
+    font-weight: normal;
+  }
+  
+  /* 关键字发光效果 - 使用#f286c4颜色，增强发光效果 */
+  .mtk10 {
+    color: #ff8dd4 !important; /* 提亮颜色 */
+    text-shadow: 0 0 2px #100c0f, 0 0 8px #f286c470, 0 0 12px #f286c470, 0 0 25px #f286c460, 0 0 30px #f286c450 !important;
+    font-weight: normal; /* 恢复原始粗细 */
+  }
