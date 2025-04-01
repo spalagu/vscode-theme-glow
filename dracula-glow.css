@@ -95,9 +95,12 @@
   
   /* Cursor Tab Suggestion样式 */
   .mtk1.ghost-text-decoration {
-    color: rgba(189, 147, 249, 0.6) !important; /* 半透明的Dracula紫色 */
+    color: #c39aff !important; /* 更亮的Dracula紫色 */
     font-style: italic !important;
-    text-shadow: 0 0 2px #100c0f, 0 0 8px rgba(189, 147, 249, 0.4) !important;
-    border-bottom: 1px dotted rgba(189, 147, 249, 0.4) !important;
-    letter-spacing: 0.05em !important; /* 增加字符间距提高可读性 */
+    text-shadow: none !important; /* 移除发光效果 */
+    background-color: rgba(40, 42, 54, 0.3) !important; /* 降低背景透明度 */
+    border-bottom: 2px solid #50fa7b !important; /* 使用Dracula绿色作为下划线 */
+    letter-spacing: 0.05em !important;
+    padding: 0 2px !important;
+    border-radius: 2px !important;
   }
