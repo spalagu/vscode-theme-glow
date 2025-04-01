@@ -4,7 +4,7 @@
 .mtk1 {
     color: #d0d0cc !important; /* 将白色改暗一些 */
   }
-
+  
   /* 未使用的变量样式 - 较暗但有特殊效果 */
   .squiggly-inline-unnecessary {
     color: #c8c8c8 !important; /* 中灰色，比正常变量暗但比原来的亮 */
@@ -13,7 +13,7 @@
     opacity: 0.9; /* 稍微透明 */
     font-style: italic; /* 斜体 */
   }
-
+  
   /* 注释样式 - 使用加框效果 */
   .mtk4 {
     color: #7b7f8b !important; /* 原有注释颜色 */
@@ -24,21 +24,21 @@
     padding: 0 4px !important; /* 左右内边距 */
     margin: 0 2px !important; /* 左右外边距 */
   }
-
+  
   /* 常量发光效果 - 使用#bf9eee颜色 */
   .mtk3 {
     color: #cca7ff !important; /* 提亮颜色 */
     text-shadow: 0 0 2px #100c0f, 0 0 10px #bf9eee75, 0 0 5px #bf9eee75, 0 0 25px #bf9eee75 !important;
     font-weight: normal;
   }
-
+  
   /* 函数名发光效果 - 使用#62e884颜色 */
   .mtk5 {
     color: #62e884 !important;
     text-shadow: 0 0 2px #100c0f, 0 0 10px #62e88475, 0 0 5px #62e88475, 0 0 25px #62e88475 !important;
     font-weight: normal;
   }
-
+  
   /* 函数参数发光效果 - 使用#FFB86C颜色 */
   .mtk7 {
     color: #FFB86C !important;
@@ -46,33 +46,33 @@
     font-weight: normal;
     font-style: italic;
   }
-
+  
   /* 字符串发光效果 - 使用暗化的黄色 */
   .mtk8 {
     color: #d3d994 !important;
   }
-
+  
   /* 类名发光效果 - 使用#97e1f1颜色 */
   .mtk9 {
     color: #4ee7ff !important; /* 调整为更蓝的颜色 */
     text-shadow: 0 0 2px #100c0f, 0 0 10px #74d8ff60, 0 0 5px #74d8ff60, 0 0 25px #74d8ff50 !important;
     font-weight: normal;
   }
-
+  
   /* 关键字发光效果 - 使用#f286c4颜色，增强发光效果 */
   .mtk10 {
     color: #ff8dd4 !important; /* 提亮颜色 */
     text-shadow: 0 0 2px #100c0f, 0 0 8px #f286c470, 0 0 12px #f286c470, 0 0 25px #f286c460, 0 0 30px #f286c450 !important;
     font-weight: normal; /* 恢复原始粗细 */
   }
-
+  
   /* 资源管理器选中行样式 - 使用绿色边框 */
   .monaco-list-row.focused.selected {
     border: 1px solid #62e884 !important;
     border-radius: 3px !important;
     box-shadow: 0 0 4px #62e88475 !important; /* 添加发光效果 */
   }
-
+  
   /* 编辑器删除行标记样式 */
   .monaco-editor .dirty-diff-deleted:after {
     border-bottom: 5px solid transparent !important;
@@ -80,15 +80,24 @@
     border-top: 5px solid transparent !important;
     bottom: -5px !important;
   }
-
+  
   /* 编辑器添加行标记样式 */
   .monaco-editor .dirty-diff-added {
     border-left-width: 5px !important;
     border-left-color: #50fa7b !important; /* Dracula主题绿色 */
   }
-
+  
   /* 编辑器修改行标记样式 */
   .monaco-editor .dirty-diff-modified-pattern {
     background-size: 5px 5px !important;
     background-image: linear-gradient(135deg, #8be9fd88 25%, transparent 25%, transparent 50%, #8be9fd88 50%, #8be9fd88 75%, transparent 75%, transparent) !important; /* Dracula主题青色 */
-  }%
+  }
+  
+  /* Cursor Tab Suggestion样式 */
+  .mtk1.ghost-text-decoration {
+    color: rgba(189, 147, 249, 0.6) !important; /* 半透明的Dracula紫色 */
+    font-style: italic !important;
+    text-shadow: 0 0 2px #100c0f, 0 0 8px rgba(189, 147, 249, 0.4) !important;
+    border-bottom: 1px dotted rgba(189, 147, 249, 0.4) !important;
+    letter-spacing: 0.05em !important; /* 增加字符间距提高可读性 */
+  }
