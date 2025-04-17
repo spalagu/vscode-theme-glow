@@ -2,105 +2,118 @@
 
 /* 变量和对象属性 - 使用暗化的白色 */
 .mtk1 {
-    color: #d0d0cc !important; /* 将白色改暗一些 */
-  }
-  
-  /* 未使用的变量样式 - 较暗但有特殊效果 */
-  .squiggly-inline-unnecessary {
-    color: #c8c8c8 !important; /* 中灰色，比正常变量暗但比原来的亮 */
-    /* 使用单一text-decoration声明，简写形式 */
-    text-decoration: line-through 2px double rgba(80, 250, 123, 0.5) !important; /* 半透明绿色双线删除线 */
-    opacity: 0.9; /* 稍微透明 */
-    font-style: italic; /* 斜体 */
-  }
-  
-  /* 注释样式 - 使用加框效果 */
-  .mtk4 {
-    color: #7b7f8b !important; /* 原有注释颜色 */
-    font-style: italic !important; /* 斜体 */
-    background-color: #282A36 !important; /* 背景同编辑器背景色 */
-    border: 1px solid rgba(150, 150, 160, 0.4) !important; /* 调整边框颜色和透明度 */
-    border-radius: 3px !important; /* 圆角 */
-    padding: 0 4px !important; /* 左右内边距 */
-    margin: 0 2px !important; /* 左右外边距 */
-  }
-  
-  /* 常量发光效果 - 使用#bf9eee颜色 */
-  .mtk3 {
-    color: #cca7ff !important; /* 提亮颜色 */
-    text-shadow: 0 0 2px #100c0f, 0 0 10px #bf9eee75, 0 0 5px #bf9eee75, 0 0 25px #bf9eee75 !important;
-    font-weight: normal;
-  }
-  
-  /* 函数名发光效果 - 使用#62e884颜色 */
-  .mtk5 {
-    color: #62e884 !important;
-    text-shadow: 0 0 2px #100c0f, 0 0 10px #62e88475, 0 0 5px #62e88475, 0 0 25px #62e88475 !important;
-    font-weight: normal;
-  }
-  
-  /* 函数参数发光效果 - 使用#FFB86C颜色 */
-  .mtk7 {
-    color: #FFB86C !important;
-    text-shadow: 0 0 2px #100c0f, 0 0 10px #FFB86C75, 0 0 5px #FFB86C75, 0 0 25px #FFB86C75 !important;
-    font-weight: normal;
-    font-style: italic;
-  }
-  
-  /* 字符串发光效果 - 使用暗化的黄色 */
-  .mtk8 {
-    color: #d3d994 !important;
-  }
-  
-  /* 类名发光效果 - 使用#97e1f1颜色 */
-  .mtk9 {
-    color: #4ee7ff !important; /* 调整为更蓝的颜色 */
-    text-shadow: 0 0 2px #100c0f, 0 0 10px #74d8ff60, 0 0 5px #74d8ff60, 0 0 25px #74d8ff50 !important;
-    font-weight: normal;
-  }
-  
-  /* 关键字发光效果 - 使用#f286c4颜色，增强发光效果 */
-  .mtk10 {
-    color: #ff8dd4 !important; /* 提亮颜色 */
-    text-shadow: 0 0 2px #100c0f, 0 0 8px #f286c470, 0 0 12px #f286c470, 0 0 25px #f286c460, 0 0 30px #f286c450 !important;
-    font-weight: normal; /* 恢复原始粗细 */
-  }
-  
-  /* 资源管理器选中行样式 - 使用绿色边框 */
-  .monaco-list-row.focused.selected {
-    border: 1px solid #62e884 !important;
-    border-radius: 3px !important;
-    box-shadow: 0 0 4px #62e88475 !important; /* 添加发光效果 */
-  }
-  
-  /* 编辑器删除行标记样式 */
-  .monaco-editor .dirty-diff-deleted:after {
-    border-bottom: 5px solid transparent !important;
-    border-left: 5px solid #ff5555 !important; /* Dracula主题红色 */
-    border-top: 5px solid transparent !important;
-    bottom: -5px !important;
-  }
-  
-  /* 编辑器添加行标记样式 */
-  .monaco-editor .dirty-diff-added {
-    border-left-width: 5px !important;
-    border-left-color: #50fa7b !important; /* Dracula主题绿色 */
-  }
-  
-  /* 编辑器修改行标记样式 */
-  .monaco-editor .dirty-diff-modified-pattern {
-    background-size: 5px 5px !important;
-    background-image: linear-gradient(135deg, #8be9fd88 25%, transparent 25%, transparent 50%, #8be9fd88 50%, #8be9fd88 75%, transparent 75%, transparent) !important; /* Dracula主题青色 */
-  }
-  
-  /* Cursor Tab Suggestion样式 */
-  .mtk1.ghost-text-decoration {
-    color: #c39aff !important; /* 更亮的Dracula紫色 */
-    font-style: italic !important;
-    text-shadow: none !important; /* 移除发光效果 */
-    background-color: rgba(40, 42, 54, 0.3) !important; /* 降低背景透明度 */
-    border-bottom: 2px solid #50fa7b !important; /* 使用Dracula绿色作为下划线 */
-    letter-spacing: 0.05em !important;
-    padding: 0 2px !important;
-    border-radius: 2px !important;
-  }
+  color: #d0d0cc !important; /* 将白色改暗一些 */
+}
+
+/* 未使用的变量样式 - 较暗但有特殊效果 */
+.squiggly-inline-unnecessary {
+  color: #c8c8c8 !important; /* 中灰色，比正常变量暗但比原来的亮 */
+  /* 使用单一text-decoration声明，简写形式 */
+  text-decoration: line-through 2px double rgba(80, 250, 123, 0.5) !important; /* 半透明绿色双线删除线 */
+  opacity: 0.9; /* 稍微透明 */
+  font-style: italic; /* 斜体 */
+}
+
+/* 注释样式 - 使用加框效果 */
+.mtk4 {
+  color: #7b7f8b !important; /* 原有注释颜色 */
+  font-style: italic !important; /* 斜体 */
+  background-color: #282A36 !important; /* 背景同编辑器背景色 */
+  border: 1px solid rgba(150, 150, 160, 0.4) !important; /* 调整边框颜色和透明度 */
+  border-radius: 3px !important; /* 圆角 */
+  padding: 0 4px !important; /* 左右内边距 */
+  margin: 0 2px !important; /* 左右外边距 */
+}
+
+/* 常量发光效果 - 使用#bf9eee颜色 */
+.mtk3 {
+  color: #cca7ff !important; /* 提亮颜色 */
+  text-shadow: 0 0 2px #100c0f, 0 0 10px #bf9eee75, 0 0 5px #bf9eee75, 0 0 25px #bf9eee75 !important;
+  font-weight: normal;
+}
+
+/* 函数名发光效果 - 使用#62e884颜色 */
+.mtk5 {
+  color: #62e884 !important;
+  text-shadow: 0 0 2px #100c0f, 0 0 10px #62e88475, 0 0 5px #62e88475, 0 0 25px #62e88475 !important;
+  font-weight: normal;
+}
+
+/* 函数参数发光效果 - 使用#FFB86C颜色 */
+.mtk7 {
+  color: #FFB86C !important;
+  text-shadow: 0 0 2px #100c0f, 0 0 10px #FFB86C75, 0 0 5px #FFB86C75, 0 0 25px #FFB86C75 !important;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* 字符串发光效果 - 使用暗化的黄色 */
+.mtk8 {
+  color: #d3d994 !important;
+}
+
+/* 类名发光效果 - 使用#97e1f1颜色 */
+.mtk9 {
+  color: #4ee7ff !important; /* 调整为更蓝的颜色 */
+  text-shadow: 0 0 2px #100c0f, 0 0 10px #74d8ff60, 0 0 5px #74d8ff60, 0 0 25px #74d8ff50 !important;
+  font-weight: normal;
+}
+
+/* 关键字发光效果 - 使用#f286c4颜色，增强发光效果 */
+.mtk10 {
+  color: #ff8dd4 !important; /* 提亮颜色 */
+  text-shadow: 0 0 2px #100c0f, 0 0 8px #f286c470, 0 0 12px #f286c470, 0 0 25px #f286c460, 0 0 30px #f286c450 !important;
+  font-weight: normal; /* 恢复原始粗细 */
+}
+
+/* 资源管理器选中行样式 - 使用绿色边框 */
+.monaco-list-row.focused.selected {
+  border: 1px solid #62e884 !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 5px rgba(80, 250, 123, 0.5) !important; /* 轻微发光效果 */
+}
+
+/* 编辑器删除行标记样式 */
+.monaco-editor .dirty-diff-deleted:after {
+  border-bottom: 5px solid transparent !important;
+  border-left: 5px solid #ff5555 !important; /* Dracula主题红色 */
+  border-top: 5px solid transparent !important;
+  bottom: -5px !important;
+}
+
+/* 编辑器添加行标记样式 */
+.monaco-editor .dirty-diff-added {
+  border-left-width: 5px !important;
+  border-left-color: #50fa7b !important; /* Dracula主题绿色 */
+}
+
+/* 编辑器修改行标记样式 */
+.monaco-editor .dirty-diff-modified-pattern {
+  background-size: 5px 5px !important;
+  background-image: linear-gradient(135deg, #8be9fd88 25%, transparent 25%, transparent 50%, #8be9fd88 50%, #8be9fd88 75%, transparent 75%, transparent) !important; /* Dracula主题青色 */
+}
+
+/* Cursor Tab Suggestion样式 */
+.mtk1.ghost-text-decoration {
+  color: #c39aff !important; /* 更亮的Dracula紫色 */
+  font-style: italic !important;
+  text-shadow: none !important; /* 移除发光效果 */
+  background-color: rgba(40, 42, 54, 0.3) !important; /* 降低背景透明度 */
+  border-bottom: 2px solid #50fa7b !important; /* 使用Dracula绿色作为下划线 */
+  letter-spacing: 0.05em !important;
+  padding: 0 2px !important;
+  border-radius: 2px !important;
+}
+
+/* hide-if-empty元素样式 - 添加绿色边框 */
+.markdown-code-outer-container {
+  border: 1px solid #50fa7b !important; /* Dracula主题绿色边框 */
+  box-shadow: 0 0 5px rgba(80, 250, 123, 0.5) !important; /* 轻微发光效果 */
+}
+
+/* 带有dir="ltr"属性的p标签样式 */
+p[dir="ltr"] {
+  background-color: #57445a !important; /* Dracula主题的selection颜色 */
+  border-radius: 3px !important;
+  padding: 2px 4px !important;
+}
